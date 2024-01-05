@@ -1,0 +1,127 @@
+.container-fluid {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#canvas {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.canvas {
+  position: absolute;
+  background-color: transparent;
+}
+
+.dimension {
+  padding: 0.255rem;
+}
+
+.box {
+  width: 65px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+button {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  outline: none;
+  cursor: pointer;
+}
+
+.gridBtn {
+  width: 65px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.grab {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+
+.grabbing {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.box-shapes {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: 500px;
+  min-height: 500px;
+  max-width: 450px;
+  min-width: 400px;
+  overflow-x: hidden;
+  justify-content: flex-end;
+}
+
+.shape-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 3px 3px 5px lightblue;
+  padding: 0rem 0.5rem;
+  width: 410px;
+}
+
+.shape-info > .box-flex {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  gap: 0.2rem;
+}
+
+.shape-info > span {
+  gap: 0.2rem;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
